@@ -10,6 +10,6 @@ export const routes: Routes = [
     { path: 'Login', component: LoginComponent },
     { path: 'Petitii', component: ListOfPetitionsComponent },
     { path: 'Deleaga-votul', component: UsersComponent },
-    { path: 'Creaza-petitie', component: CreatePetitionComponent },
+    { path: 'Creeaza-petitie', component: CreatePetitionComponent },
     { path: 'Creare-cont', component: CreateAccountComponent }
 ];

@@ -1,8 +1,37 @@
-<p>create-account works!</p>
-<p>create-account works!</p>
-<p>create-account works!</p>
-<p>create-account works!</p>
-<p>create-account works!</p>
-<p>create-account works!</p>
-<p>create-account works!</p>
-<p>create-account works!</p>
+<form (ngSubmit)="onSubmit()" class="user-form">
+  <div class="form-row">
+    <div class="form-group">
+      <label for="username">Nume utilizator:</label>
+      <input type="text" id="username" name="username" [(ngModel)]="formData.username" class="form-control" required>
+    </div>
+    <div class="form-group">
+      <label for="password">Parola:</label>
+      <input type="password" id="password" name="password" [(ngModel)]="formData.password" class="form-control" required>
+    </div>
+  </div>
+  
+  <div class="form-row">
+    <div class="form-group">
+      <label for="lastName">Nume de familie:</label>
+      <input type="text" id="lastName" name="lastName" [(ngModel)]="formData.lastName" class="form-control" required>
+    </div>
+    <div class="form-group">
+      <label for="firstName">Prenume:</label>
+      <input type="text" id="firstName" name="firstName" [(ngModel)]="formData.firstName" class="form-control" required>
+    </div>
+  </div>
+  
+  <div class="form-group">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" [(ngModel)]="formData.email" class="form-control" required>
+  </div>
+  
+  <div class="form-row">
+    <div class="form-group">
+      <label for="phone">Telefon:</label>
+      <input type="tel" id="phone" name="phone" [(ngModel)]="formData.phone" class="form-control" required>
+    </div>
+  </div>
+  
+  <button type="submit" class="btn btn-primary raised">Submit</button>
+</form>
